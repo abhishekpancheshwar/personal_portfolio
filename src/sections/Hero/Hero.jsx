@@ -8,7 +8,7 @@ import githubLight from '../../assets/github-light.svg';
 import githubDark from '../../assets/github-dark.svg';
 import linkedinLight from '../../assets/linkedin-light.svg';
 import linkedinDark from '../../assets/linkedin-dark.svg';
-import CV from '../../assets/cv.pdf';
+import CV from "../../assets/cv.pdf";
 import { useTheme } from '../../common/ThemeContext';
 
 function Hero() {
@@ -36,25 +36,24 @@ function Hero() {
       </div>
       <div className={styles.info}>
         <h1>
-          Harris
+          Abhishek
           <br />
-          Johnsen
+          Pancheshwar
         </h1>
-        <h2>Frontend Developer</h2>
+        <h2>A passionate Frontend Developer</h2>
         <span>
-          <a href="https://twitter.com/" target="_blank">
+          <a href="https://twitter.com/abhishekpancheshwar" target="_blank">
             <img src={twitterIcon} alt="Twitter icon" />
           </a>
-          <a href="https://github.com/" target="_blank">
+          <a href="https://github.com/abhishekpancheshwar/abhishekpancheshwar" target="_blank">
             <img src={githubIcon} alt="Github icon" />
           </a>
-          <a href="https://linkedin.com/" target="_blank">
+          <a href="https://www.linkedin.com/in/abhishek-pancheshwar-05610b211/" target="_blank">
             <img src={linkedinIcon} alt="Linkedin icon" />
           </a>
         </span>
         <p className={styles.description}>
-          With a passion for developing modern React web apps for commercial
-          businesses.
+        Passionate frontend developer with a keen eye for design and a love for clean, efficient code.
         </p>
         <a href={CV} download>
           <button className="hover">Resume</button>

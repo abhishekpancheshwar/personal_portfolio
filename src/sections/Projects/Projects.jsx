@@ -1,9 +1,9 @@
-import styles from './ProjectsStyles.module.css';
-import viberr from '../../assets/viberr.png';
-import freshBurger from '../../assets/fresh-burger.png';
-import hipsster from '../../assets/hipsster.png';
-import fitLift from '../../assets/fitlift.png';
-import ProjectCard from '../../common/ProjectCard';
+import styles from "./ProjectsStyles.module.css";
+import viberr from "../../assets/shoppiingimg.png";
+import freshBurger from "../../assets/courier-app.png";
+import hipsster from "../../assets/hipsster.png";
+import fitLift from "../../assets/fitlift.png";
+import ProjectCard from "../../common/ProjectCard";
 
 function Projects() {
   return (
@@ -12,15 +12,15 @@ function Projects() {
       <div className={styles.projectsContainer}>
         <ProjectCard
           src={viberr}
-          link="https://github.com/Ade-mir/company-landing-page-2"
-          h3="Viberr"
-          p="Streaming App"
+          link="https://github.com/abhishekpancheshwar/shopping-cart-using-react"
+          h3="Shopping-Cart"
+          p="Shopping-app"
         />
         <ProjectCard
           src={freshBurger}
-          link="https://github.com/Ade-mir/company-landing-page-2"
-          h3="Fresh Burger"
-          p="Hamburger Restaurant"
+          link="https://github.com/abhishekpancheshwar/courier"
+          h3="Courier App"
+          p="Courier Delivery App"
         />
         <ProjectCard
           src={hipsster}

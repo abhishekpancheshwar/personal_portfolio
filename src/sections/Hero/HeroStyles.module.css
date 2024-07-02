@@ -68,13 +68,62 @@
 }
 
 .description {
-  max-width: 24ch;
+  max-width: 80%;
+  margin: auto;
 }
 
 .info {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+h1,
+h2 {
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  border-right: 0.15em solid #000;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+h1 {
+  width: 0;
+  animation: typing 3.5s steps(40, end) forwards,
+    blink-caret 0.75s step-end infinite;
+}
+
+h2 {
+  width: 0;
+  animation: typing 3.5s steps(40, end) 3.5s forwards,
+    blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+:root {
+  --caret-color-light: #ff4500; /* Orange-red color for light mode */
+  --caret-color-dark: #0066cc; /* Cyan color for dark mode */
+  --caret-color: var(--caret-color-light); /* Default to light mode color */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --caret-color: var(--caret-color-dark); /* Switch to dark mode color */
+  }
+}
+
+@keyframes blink-caret {
+  from, to { border-right: 0.15em solid transparent }
+  50% { border-right: 0.15em solid var(--caret-color) }
 }
 
 @media (width >= 800px) {
