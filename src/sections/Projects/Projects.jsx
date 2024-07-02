@@ -1,7 +1,7 @@
 import styles from "./ProjectsStyles.module.css";
 import viberr from "../../assets/shoppiingimg.png";
 import freshBurger from "../../assets/courier-app.png";
-import hipsster from "../../assets/hipsster.png";
+import hipsster from "../../assets/portfolio-logo.png";
 import fitLift from "../../assets/fitlift.png";
 import ProjectCard from "../../common/ProjectCard";
 
@@ -25,8 +25,8 @@ function Projects() {
         <ProjectCard
           src={hipsster}
           link="https://github.com/Ade-mir/company-landing-page-2"
-          h3="Hipsster"
-          p="Glasses Shop"
+          h3="Personal Portfolio"
+          p="Portfolio web"
         />
         <ProjectCard
           src={fitLift}
