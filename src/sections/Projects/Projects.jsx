@@ -11,6 +11,15 @@ function Projects() {
       <h1 className="sectionTitle">Projects</h1>
       <div className={styles.projectsContainer}>
         <ProjectCard
+          src='https://cdn-icons-png.flaticon.com/128/3176/3176287.png'
+          link="https://github.com/abhishekpancheshwar"
+          h3="EcomGrove"
+          p="E-commerce website"
+          h4="CLick on logo to see live demo"
+
+          
+        />
+        <ProjectCard
           src={viberr}
           link="https://github.com/abhishekpancheshwar/shopping-cart-using-react"
           h3="Shopping-Cart"
@@ -24,16 +33,11 @@ function Projects() {
         />
         <ProjectCard
           src={hipsster}
-          link="https://github.com/Ade-mir/company-landing-page-2"
+          link="https://github.com/abhishekpancheshwar"
           h3="Personal Portfolio"
           p="Portfolio web"
         />
-        <ProjectCard
-          src={fitLift}
-          link="https://github.com/Ade-mir/company-landing-page-2"
-          h3="FitLift"
-          p="Fitness App"
-        />
+        
       </div>
     </section>
   );

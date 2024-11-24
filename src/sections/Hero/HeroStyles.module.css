@@ -84,20 +84,20 @@ h2 {
   white-space: nowrap;
   margin: 0 auto;
   letter-spacing: 0.15em;
-  border-right: 0.15em solid #000;
-  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+  border-right: 0.15em solid var(--caret-color);
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end 3.5s;
 }
 
 h1 {
   width: 0;
   animation: typing 3.5s steps(40, end) forwards,
-    blink-caret 0.75s step-end infinite;
+    blink-caret 0.75s step-end 3.5s forwards;
 }
 
 h2 {
   width: 0;
   animation: typing 3.5s steps(40, end) 3.5s forwards,
-    blink-caret 0.75s step-end infinite;
+    blink-caret 0.75s step-end 7s forwards;
 }
 
 @keyframes typing {
@@ -109,6 +109,16 @@ h2 {
   }
 }
 
+@keyframes blink-caret {
+  0%, 50% {
+    border-right-color: var(--caret-color);
+  }
+  100% {
+    border-right-color: transparent;
+  }
+}
+
+
 :root {
   --caret-color-light: #ff4500; /* Orange-red color for light mode */
   --caret-color-dark: #0066cc; /* Cyan color for dark mode */
@@ -119,11 +129,6 @@ h2 {
   :root {
     --caret-color: var(--caret-color-dark); /* Switch to dark mode color */
   }
-}
-
-@keyframes blink-caret {
-  from, to { border-right: 0.15em solid transparent }
-  50% { border-right: 0.15em solid var(--caret-color) }
 }
 
 @media (width >= 800px) {
@@ -145,5 +150,16 @@ h2 {
       max-width: 400px;
       width: 400px;
     }
+  }
+}
+
+/* Additional responsiveness for smaller screens */
+@media (max-width: 500px) {
+  h2 {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+    white-space: normal; /* Allow line wrap */
+  }
+  .description {
+    font-size: 0.9rem; /* Reduce text size for better fit */
   }
 }
