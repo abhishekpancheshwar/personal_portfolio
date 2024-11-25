@@ -38,6 +38,7 @@ function Skills() {
         <SkillList src={checkMarkIcon} skill="Operating System" />
         <SkillList src={checkMarkIcon} skill="Database Management System" />
         <SkillList src={checkMarkIcon} skill="Computer Network" />
+        <SkillList src={checkMarkIcon} skill="Artificial Intelligence" />
       </div>
       <hr />
       

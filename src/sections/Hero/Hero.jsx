@@ -1,5 +1,5 @@
 import styles from './HeroStyles.module.css';
-import heroImg from '../../assets/Design uten navn.png';
+import heroImg from '../../assets/ai_image.jpg';
 import sun from '../../assets/sun.svg';
 import moon from '../../assets/moon.svg';
 import twitterLight from '../../assets/twitter-light.svg';
@@ -35,12 +35,12 @@ function Hero() {
         />
       </div>
       <div className={styles.info}>
-        <h1>
+        <h1>I' am
           Abhishek
           <br />
           Pancheshwar
         </h1>
-        <h2>A passionate Frontend Developer</h2>
+        <h2>A passionate Web Developer</h2>
         <span>
           <a href="https://twitter.com/abhishekpancheshwar" target="_blank">
             <img src={twitterIcon} alt="Twitter icon" />
@@ -53,7 +53,8 @@ function Hero() {
           </a>
         </span>
         <p className={styles.description}>
-        Passionate frontend developer with a keen eye for design and a love for clean, efficient code.
+        
+I am a skilled full-stack developer experienced in the MERN Stack (MongoDB, Express.js, React.js, Node.js) and Tailwind CSS. With strong problem-solving, critical thinking, and communication skills, I excel in creating responsive, scalable web applications. I am proficient in testing with Postman, version control (Git/GitHub), and building secure authentication systems using JWT. Focused on delivering high-quality, user-friendly solutions, I aim to solve complex challenges and meet both technical and business needs efficiently.
         </p>
         <a href={CV} download>
           <button className="hover">Resume</button>
