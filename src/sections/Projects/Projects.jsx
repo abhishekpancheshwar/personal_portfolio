@@ -2,7 +2,6 @@ import styles from "./ProjectsStyles.module.css";
 import viberr from "../../assets/bussiness_icon.jpeg";
 import freshBurger from "../../assets/chat_image.jpeg";
 import hipsster from "../../assets/portfolio-logo.png";
-import fitLift from "../../assets/fitlift.png";
 import ProjectCard from "../../common/ProjectCard";
 
 function Projects() {

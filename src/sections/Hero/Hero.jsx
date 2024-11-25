@@ -35,7 +35,7 @@ function Hero() {
         />
       </div>
       <div className={styles.info}>
-        <h1>I' am
+        <h1>It&apos;s
           Abhishek
           <br />
           Pancheshwar
