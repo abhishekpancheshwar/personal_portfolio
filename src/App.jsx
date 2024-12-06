@@ -4,6 +4,7 @@ import Footer from './sections/Footer/Footer';
 import Hero from './sections/Hero/Hero';
 import Projects from './sections/Projects/Projects';
 import Skills from './sections/Skills/Skills';
+import TestTheme from './testtheme';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Skills />
       <Contact />
       <Footer />
+      <TestTheme />
     </>
   );
 }

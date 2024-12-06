@@ -13,6 +13,10 @@ import { useTheme } from '../../common/ThemeContext';
 
 function Hero() {
   const { theme, toggleTheme } = useTheme();
+  console.log('Current theme:', theme);
+  console.log('Theme icon:', themeIcon);
+  console.log('Twitter icon:', twitterIcon);
+
 
   const themeIcon = theme === 'light' ? sun : moon;
   const twitterIcon = theme === 'light' ? twitterLight : twitterDark;
@@ -35,7 +39,7 @@ function Hero() {
         />
       </div>
       <div className={styles.info}>
-        <h1>It&apos;s
+        <h1>I&apos;m
           Abhishek
           <br />
           Pancheshwar
