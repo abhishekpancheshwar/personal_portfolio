@@ -13,16 +13,13 @@ import { useTheme } from '../../common/ThemeContext';
 
 function Hero() {
   const { theme, toggleTheme } = useTheme();
-  console.log('Current theme:', theme);
-  console.log('Theme icon:', themeIcon);
-  console.log('Twitter icon:', twitterIcon);
 
 
   const themeIcon = theme === 'light' ? sun : moon;
   const twitterIcon = theme === 'light' ? twitterLight : twitterDark;
   const githubIcon = theme === 'light' ? githubLight : githubDark;
   const linkedinIcon = theme === 'light' ? linkedinLight : linkedinDark;
-
+  
   return (
     <section id="hero" className={styles.container}>
       <div className={styles.colorModeContainer}>
