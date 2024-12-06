@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/personal_portfolio/static/css/main.b93ebe12.css",
-    "main.js": "/personal_portfolio/static/js/main.8ca0364e.js",
+    "main.js": "/personal_portfolio/static/js/main.356df7dd.js",
     "static/media/ai_image.jpg": "/personal_portfolio/static/media/ai_image.e535e08178ac4dab18c2.jpg",
     "static/media/cv.pdf": "/personal_portfolio/static/media/cv.a7d222239f4e0befe804.pdf",
     "static/media/sun.svg": "/personal_portfolio/static/media/sun.a986458e5595b4237f08ee312d301ff3.svg",
@@ -10,16 +10,15 @@
     "static/media/moon.svg": "/personal_portfolio/static/media/moon.810fba0ee49fdd7023f6e1aa2b4bab87.svg",
     "static/media/linkedin-dark.svg": "/personal_portfolio/static/media/linkedin-dark.4849f84a7e76fde3e7508ef828cf6d7b.svg",
     "static/media/linkedin-light.svg": "/personal_portfolio/static/media/linkedin-light.f52c806dae34fc7afae25af380bf8c66.svg",
-    "static/media/checkmark-dark.svg": "/personal_portfolio/static/media/checkmark-dark.1826eabf0e2181d2f2c88d7b72731149.svg",
     "static/media/checkmark-light.svg": "/personal_portfolio/static/media/checkmark-light.c8c345ee162e424f794588a227e27958.svg",
     "static/media/twitter-dark.svg": "/personal_portfolio/static/media/twitter-dark.c4236a95b1a54627edce47c20a871ef0.svg",
     "static/media/twitter-light.svg": "/personal_portfolio/static/media/twitter-light.4cd529fb546a15c4ba25f77c75614f35.svg",
     "index.html": "/personal_portfolio/index.html",
     "main.b93ebe12.css.map": "/personal_portfolio/static/css/main.b93ebe12.css.map",
-    "main.8ca0364e.js.map": "/personal_portfolio/static/js/main.8ca0364e.js.map"
+    "main.356df7dd.js.map": "/personal_portfolio/static/js/main.356df7dd.js.map"
   },
   "entrypoints": [
     "static/css/main.b93ebe12.css",
-    "static/js/main.8ca0364e.js"
+    "static/js/main.356df7dd.js"
   ]
 }
