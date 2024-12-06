@@ -15,7 +15,9 @@ export const ThemeProvider = ({ children }) => {
   const [theme, setTheme] = useState(() => {
     try {
       // Attempt to retrieve theme from localStorage
+      console.log('ThemeProvider rendered');
       return localStorage.getItem('theme') || 'light';
+      
     } catch (error) {
       // Log any error that occurs while accessing localStorage
       console.error("Error reading theme from localStorage:", error);

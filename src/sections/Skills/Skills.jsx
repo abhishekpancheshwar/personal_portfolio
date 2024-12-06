@@ -1,7 +1,6 @@
 import styles from './SkillsStyles.module.css';
-// import checkMarkIconDark from '../../assets/checkmark-dark.svg';
+import checkMarkIconDark from '../../assets/checkmark-dark.svg';
 import checkMarkIconLight from '../../assets/checkmark-light.svg';
-const checkMarkIconDark = checkMarkIconLight; // For testing only
 import SkillList from '../../common/SkillList';
 import { useTheme } from '../../common/ThemeContext';
 
