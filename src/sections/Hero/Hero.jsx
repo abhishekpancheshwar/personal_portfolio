@@ -14,7 +14,7 @@ import { useTheme } from '../../common/ThemeContext';
 function Hero() {
   const { theme, toggleTheme } = useTheme();
 
-  console.log("this is abhishek");
+  console.log("hero is render");``
   
   const themeIcon = theme === 'light' ? sun : moon;
   const twitterIcon = theme === 'light' ? twitterLight : twitterDark;

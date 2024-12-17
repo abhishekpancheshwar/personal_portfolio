@@ -6,7 +6,7 @@ import { useTheme } from '../../common/ThemeContext';
 
 function Skills() {
   const { theme } = useTheme();
-  console.log('Current theme:', theme);
+  console.log('Current theme:', theme, "skill is render");
   const checkMarkIcon = theme === 'light' ? checkMarkIconLight : checkMarkIconDark;
 
   return (
