@@ -41,6 +41,7 @@ function Projects() {
                 fontSize: "1.2rem",
                 lineHeight: "1.5",
               }}
+              
             >
               I built an interactive e-commerce website using the MERN stack
               (MongoDB, Express.js, React.js, Node.js) with Tailwind CSS for a
@@ -95,7 +96,7 @@ function Projects() {
             </h3>
           }
           p={
-            <p
+            <p 
               style={{
                 textAlign: "center",
                 marginBottom: "15px",
@@ -203,6 +204,7 @@ function Projects() {
                 history securely.
               </li>
               <p> - Click on logo to see -</p>
+
             </ul>
           }
         />

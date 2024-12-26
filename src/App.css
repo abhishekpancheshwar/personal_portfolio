@@ -42,9 +42,11 @@ p {
 
 h2,
 h3,
+li,
 p {
   font-family: 'Roboto Mono', monospace;
 }
+
 
 h1,
 h2 {
@@ -63,8 +65,9 @@ h1 {
 
 p {
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
 }
+
 
 .sectionTitle {
   margin-bottom: 30px;
