@@ -13,7 +13,6 @@ function Skills() {
     <section id="skills" className={styles.container}>
       <h1 className="sectionTitle">Skills</h1>
       <div className={styles.skillList}>
-        <div>Skill Placeholder</div>
         <SkillList src={checkMarkIcon} skill="HTML" />
         <SkillList src={checkMarkIcon} skill="CSS" />
         <SkillList src={checkMarkIcon} skill="JavaScript" />
@@ -40,7 +39,7 @@ function Skills() {
         <SkillList src={checkMarkIcon} skill="Operating System" />
         <SkillList src={checkMarkIcon} skill="Database Management System" />
         <SkillList src={checkMarkIcon} skill="Computer Network" />
-        <SkillList src={checkMarkIcon} skill="Artificial Intelligence" />
+        <SkillList src={checkMarkIcon} skill="AI" />
       </div>
       <hr />
       

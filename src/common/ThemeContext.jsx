@@ -14,26 +14,21 @@ export const useTheme = () => {
 export const ThemeProvider = ({ children }) => {
   const [theme, setTheme] = useState(() => {
     try {
-      // Attempt to retrieve theme from localStorage
       console.log('ThemeProvider rendered');
       return localStorage.getItem('theme') || 'light';
-      
     } catch (error) {
-      // Log any error that occurs while accessing localStorage
       console.error("Error reading theme from localStorage:", error);
-      return 'light';  // Fallback to 'light' theme if there's an error
+      return 'light';
     }
   });
 
+  const textColor = theme === 'light' ? '#000000' : '#FFFFFF'; // Set text color dynamically
+
   useEffect(() => {
     try {
-      // Attempt to set the data-theme attribute on the body
       document.body.setAttribute('data-theme', theme);
-
-      // Attempt to store the theme in localStorage
       localStorage.setItem('theme', theme);
     } catch (error) {
-      // Log any error that occurs while interacting with the DOM or localStorage
       console.error("Error setting theme in localStorage or updating the DOM:", error);
     }
   }, [theme]);
@@ -43,15 +38,14 @@ export const ThemeProvider = ({ children }) => {
   };
 
   return (
-    <ThemeContext.Provider value={{ theme, toggleTheme }}>
+    <ThemeContext.Provider value={{ theme, toggleTheme, textColor }}>
       {children}
     </ThemeContext.Provider>
   );
 };
 
-// Apply PropTypes to ThemeProvider
 ThemeProvider.propTypes = {
-  children: PropTypes.node.isRequired,  // Validate that children are passed and should be a valid React node
+  children: PropTypes.node.isRequired,
 };
 
 export default ThemeContext;
